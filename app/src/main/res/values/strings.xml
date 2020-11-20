@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Autenticacion Usuario Amarillo</string>
+    <string name="edt_hint_password">password</string>
+    <string name="bt_acceder">Acceder</string>
+    <string name="txt_hint_email">Email</string>
+    <string name="login_de_usuario">Login de usuario</string>
+</resources>
