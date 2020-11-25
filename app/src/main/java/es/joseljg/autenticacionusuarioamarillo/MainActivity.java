@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        edt_email = findViewById(R.id.edt_email);
+        edt_email = findViewById(R.id.edt_emailr);
         edt_password = findViewById(R.id.edt_password);
     }
 
@@ -45,5 +45,10 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         return false;
+    }
+
+    public void registrarse(View view) {
+        Intent intent = new Intent(this, RegistroActivity.class);
+        startActivity(intent);
     }
 }

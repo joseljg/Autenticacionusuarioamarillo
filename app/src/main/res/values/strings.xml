@@ -4,4 +4,13 @@
     <string name="bt_acceder">Acceder</string>
     <string name="txt_hint_email">Email</string>
     <string name="login_de_usuario">Login de usuario</string>
+    <string name="txt_registrarse">Registrarse</string>
+    <string name="txt_registro_de_usuario">Registro de Usuario</string>
+    <string name="txt_email_registro">email</string>
+    <string name="txt_nombre_registro">Nombre</string>
+    <string name="txt_contrasena_registro">contraseña</string>
+    <string name="repite_contrasena_registro">Repite contraseña</string>
+    <string name="txt_telefono_registro">telefono</string>
+    <string name="bt_registrarse">Registrarse</string>
+
 </resources>

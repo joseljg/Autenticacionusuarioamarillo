@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/edt_email"
+        android:id="@+id/edt_emailr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -32,20 +32,21 @@
         android:ems="10"
         android:hint="@string/edt_hint_password"
         android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="@+id/edt_email"
+        app:layout_constraintEnd_toEndOf="@+id/edt_emailr"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/edt_email"
-        app:layout_constraintTop_toBottomOf="@+id/edt_email"
+        app:layout_constraintStart_toStartOf="@+id/edt_emailr"
+        app:layout_constraintTop_toBottomOf="@+id/edt_emailr"
         android:autofillHints="" />
 
     <Button
         android:id="@+id/bt_autenticacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="@string/bt_acceder"
+        android:layout_marginTop="44dp"
         android:onClick="acceder"
+        android:text="@string/bt_acceder"
         app:layout_constraintEnd_toEndOf="@+id/edt_password"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/edt_password"
         app:layout_constraintTop_toBottomOf="@+id/edt_password" />
 
@@ -60,4 +61,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/login" />
+
+    <TextView
+        android:id="@+id/txt_registrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:onClick="registrarse"
+        android:text="@string/txt_registrarse"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_autenticacion"
+        app:layout_constraintStart_toEndOf="@+id/bt_autenticacion" />
 </androidx.constraintlayout.widget.ConstraintLayout>

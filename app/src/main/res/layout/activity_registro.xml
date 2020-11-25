@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity">
+
+    <TextView
+        android:id="@+id/txt_titulo_registro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/txt_registro_de_usuario"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_nombrer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="@string/txt_nombre_registro"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo_registro"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/edt_emailr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/txt_email_registro"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/edt_nombrer"
+        app:layout_constraintStart_toStartOf="@+id/edt_nombrer"
+        app:layout_constraintTop_toBottomOf="@+id/edt_nombrer"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/edt_passwordr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/txt_contrasena_registro"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/edt_emailr"
+        app:layout_constraintStart_toStartOf="@+id/edt_emailr"
+        app:layout_constraintTop_toBottomOf="@+id/edt_emailr"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/edt_passwordr2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/repite_contrasena_registro"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/edt_passwordr1"
+        app:layout_constraintStart_toStartOf="@+id/edt_passwordr1"
+        app:layout_constraintTop_toBottomOf="@+id/edt_passwordr1"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/edt_telefonor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/txt_telefono_registro"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/edt_passwordr2"
+        app:layout_constraintStart_toStartOf="@+id/edt_passwordr2"
+        app:layout_constraintTop_toBottomOf="@+id/edt_passwordr2" />
+
+    <Button
+        android:id="@+id/bt_registrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/bt_registrarse"
+        android:onClick="registrarse"
+        app:layout_constraintEnd_toEndOf="@+id/edt_telefonor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_telefonor"
+        app:layout_constraintTop_toBottomOf="@+id/edt_telefonor" />
+
+    <TextView
+        android:id="@+id/txt_volver_principal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Volver"
+        android:onClick="volverlogin"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_registrarse"
+        app:layout_constraintStart_toEndOf="@+id/bt_registrarse"
+        app:layout_constraintTop_toTopOf="@+id/bt_registrarse"
+        app:layout_constraintVertical_bias="0.724" />
+</androidx.constraintlayout.widget.ConstraintLayout>
